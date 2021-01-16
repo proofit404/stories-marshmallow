@@ -1,15 +1,29 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
 [tool.poetry]
-name = "stories-marshmallow"
-version = "0.1.0"
-description = "Use marshmallow schemas as stories context contract."
 authors = ["Artem Malyshev <proofit404@gmail.com>"]
+classifiers = [
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+description = "Use marshmallow schemas as stories context contract."
+documentation = "https://proofit404.github.io/stories-marshmallow"
+homepage = "https://pypi.org/project/stories-marshmallow"
 license = "BSD-2-Clause"
+name = "stories-marshmallow"
+packages = [
+    { include = "_stories_marshmallow", from = "src" },
+    { include = "stories_marshmallow", from = "src" },
+]
+readme = "docs/index.md"
+repository = "https://github.com/proofit404/stories-marshmallow"
+version = "0.2.0dev0"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "~3.6 || ~3.7 || ~3.8 || ~3.9"
 
-[tool.poetry.dev-dependencies]
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.poetry.urls]
+Changelog = "https://proofit404.github.io/stories-marshmallow/changelog"
+Issues = "https://github.com/proofit404/stories-marshmallow/issues"

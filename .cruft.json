@@ -1,0 +1,25 @@
+{
+  "template": "https://github.com/proofit404/python-library-template",
+  "commit": "4b9d3932b778f1a36135084bcb05af3eca87069e",
+  "context": {
+    "cookiecutter": {
+      "project_name": "stories-marshmallow",
+      "public_module_name": "stories_marshmallow",
+      "private_module_name": "_stories_marshmallow",
+      "exception_name": "StoryMarshmallowError",
+      "project_version": "0.2.0dev0",
+      "project_description": "Use marshmallow schemas as stories context contract.",
+      "author_name": "Artem Malyshev",
+      "author_email": "proofit404@gmail.com",
+      "github_user": "proofit404",
+      "github_repository": "https://github.com/proofit404/stories-marshmallow",
+      "issues_url": "https://github.com/proofit404/stories-marshmallow/issues",
+      "documentation_url": "https://proofit404.github.io/stories-marshmallow",
+      "changelog_url": "https://proofit404.github.io/stories-marshmallow/changelog",
+      "pypi_project": "https://pypi.org/project/stories-marshmallow",
+      "azure_definition_id": "11",
+      "_template": "https://github.com/proofit404/python-library-template"
+    }
+  },
+  "directory": null
+}
