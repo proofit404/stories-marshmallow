@@ -1,7 +1,7 @@
 # Stories marshmallow
 
-[![azure-devops-builds](https://img.shields.io/azure-devops/build/proofit404/stories-marshmallow/11?style=flat-square)](https://dev.azure.com/proofit404/stories-marshmallow/_build/latest?definitionId=11&branchName=master)
-[![azure-devops-coverage](https://img.shields.io/azure-devops/coverage/proofit404/stories-marshmallow/11?style=flat-square)](https://dev.azure.com/proofit404/stories-marshmallow/_build/latest?definitionId=11&branchName=master)
+[![azure-devops-builds](https://img.shields.io/azure-devops/build/proofit404/stories-marshmallow/19?style=flat-square)](https://dev.azure.com/proofit404/stories-marshmallow/_build/latest?definitionId=19&branchName=master)
+[![azure-devops-coverage](https://img.shields.io/azure-devops/coverage/proofit404/stories-marshmallow/19?style=flat-square)](https://dev.azure.com/proofit404/stories-marshmallow/_build/latest?definitionId=19&branchName=master)
 [![pypi](https://img.shields.io/pypi/v/stories-marshmallow?style=flat-square)](https://pypi.org/project/stories-marshmallow)
 [![python](https://img.shields.io/pypi/pyversions/stories-marshmallow?style=flat-square)](https://pypi.org/project/stories-marshmallow)
 
@@ -25,7 +25,24 @@ A line of text explaining snippet below…
 
 ```pycon
 
->>> from stories_marshmallow import *
+>>> from marshmallow import Schema
+>>> from marshmallow.fields import String
+>>> from stories import story, Success
+>>> from stories_marshmallow import contract
+
+>>> class Purchase:
+...
+...     @story
+...     def make(I):
+...         I.find_user
+...
+...     def find_user(self, state):
+...         return Success()
+
+>>> @contract(Purchase.make)
+... class State(Schema):
+...
+...     user = String()
 
 ```
 
