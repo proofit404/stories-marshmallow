@@ -37,3 +37,5 @@ nav:
       - Home: index.md
       - Installation: installation.md
       - Changelog: changelog.md
+  - Usage:
+      - Contract: contract.md
