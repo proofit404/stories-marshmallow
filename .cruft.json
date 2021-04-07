@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/proofit404/python-library-template",
-  "commit": "4b9d3932b778f1a36135084bcb05af3eca87069e",
+  "commit": "da847ad6c9ab570eaeb8a6729a79b51c4c99d64d",
   "context": {
     "cookiecutter": {
       "project_name": "stories-marshmallow",
